@@ -11,6 +11,12 @@
 
 TODO
 
+## サンプルページで利用されているコンポーネントの分類
+
+今回のサンプルページで利用されているコンポーネントの分類は以下の通り。
+
+<img src="./media/app-view.png" alt="アプリケーションの画面">
+
 ## Project setup
 ```
 yarn install
