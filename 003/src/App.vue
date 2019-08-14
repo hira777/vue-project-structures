@@ -5,6 +5,7 @@
     <VMenu3 :items="items" />
     <VMenu4 :items="items" />
     <VMenu5 :items="items" />
+    <VMenusVMenu :items="items" />
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import VMenu2 from "./components/molecules/VMenu2.vue";
 import VMenu3 from "./components/molecules/VMenu3/VMenu3.vue";
 import VMenu4 from "./components/molecules/VMenu4.vue";
 import VMenu5 from "./components/molecules/VMenu5.vue";
+import VMenusVMenu from "./components/molecules/menus/menu/VMenu.vue";
 
 export default {
   name: "app",
@@ -22,7 +24,8 @@ export default {
     VMenu2,
     VMenu3,
     VMenu4,
-    VMenu5
+    VMenu5,
+    VMenusVMenu
   },
   data() {
     return {

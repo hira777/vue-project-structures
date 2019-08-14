@@ -138,9 +138,32 @@ Atoms を `atoms`ディレクトリに格納するパターン。
 
 しかし、冗長。また`atoms`ディレクトリの中に`molecules`ディレクトリを切るのはどうなのよと思う。
 
+## パターン5
+
+参考: [DMM動画サービスの問題を解決しようとしている話（コンポーネント編）](https://inside.dmm.com/entry/2018/07/12/components)
+
+```
+.
+└── components
+    ├── atoms
+    │   └── menus
+    │       └── menuItem
+    │           └── VMenuItem.vue
+    └── molecules
+        └── menus
+            └── menu
+                └── VMenu.vue
+```
+
+`components/atoms/menus/menuItem`のように、`/components/粒度/カテゴリ/コンポーネント名`で分けるパターン。
+
+ディレクトリの階層が深くなるが、中規模以上のアプリケーションであれば、これが一番使いやすいのではないかと思った。
+
+小規模なアプリケーションであれば。ここまでする必要はないと思う。
+
 ## 総括
 
-冒頭にも書いたが、あまり良いものはなかった。
+小規模でない限り、パターン5が良いんじゃないのかーと思った。
 
 ## Project setup
 ```
