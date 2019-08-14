@@ -1,5 +1,10 @@
 # 004
 
+## 新たな試みや、今回新しく得た知識
+
+- Web API通信のデザインパターンにレポジトリパターンを利用した（[【Vue.js】Web API通信のデザインパターン (個人的ベストプラクティス)](https://qiita.com/07JP27/items/0923cbe3b6435c19d761)）
+- Vue CLI の場合`vue.config.js`を利用してグローバルなScss変数を定義できる（[Globally Load SASS into your Vue.js Applications](https://vueschool.io/articles/vuejs-tutorials/globally-load-sass-into-your-vue-js-applications/)）
+
 ## Project setup
 ```
 yarn install
