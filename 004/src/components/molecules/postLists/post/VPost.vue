@@ -1,8 +1,8 @@
 <template>
-  <article class="v-post">
-    <h1 class="v-post__title">{{ title }}</h1>
+  <div class="v-post" @click="onClickPost">
+    <p class="v-post__title">{{ title }}</p>
     <p class="v-post__text">{{ body }}</p>
-  </article>
+  </div>
 </template>
 
 <script>
@@ -32,6 +32,8 @@ export default {
 
 <style lang="scss" scoped>
 .v-post {
+  cursor: pointer;
+
   .v-post__title {
     color: #41b883;
     font-size: 1.6rem;

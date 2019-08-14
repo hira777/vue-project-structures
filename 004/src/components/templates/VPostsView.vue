@@ -10,7 +10,7 @@
 import { mapGetters } from "vuex";
 
 import VContainer from "@/components/layouts/containers/container/VContainer.vue";
-import VPosts from "@/components/organisms/posts/posts/VPosts.vue";
+import VPosts from "@/components/organisms/postLists/posts/VPosts.vue";
 
 export default {
   name: "VPostsView",

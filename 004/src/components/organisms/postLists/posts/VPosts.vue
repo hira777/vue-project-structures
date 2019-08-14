@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import VPost from "@/components/molecules/posts/post/VPost.vue";
+import VPost from "@/components/molecules/postLists/post/VPost.vue";
 
 export default {
   name: "VPosts",
@@ -35,7 +35,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .v-posts {
   margin-top: 20px;
 
