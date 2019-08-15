@@ -15,7 +15,7 @@
 // import { mapGetters } from "vuex";
 
 import VContainer from "@/components/layouts/containers/container/VContainer.vue";
-import VWhiteOnDarkLogo from "@/components/atoms/headers/whiteOnDarkLogo/VWhiteOnDarkLogo.vue";
+import VWhiteOnDarkLogo from "@/components/atoms/logos/whiteOnDarkLogo/VWhiteOnDarkLogo.vue";
 
 export default {
   name: "VHeader",

@@ -1,6 +1,6 @@
 <template>
   <div class="v-white-on-dark-logo">
-    <img alt="Vue logo" src="@/assets/headers/white-on-dark-logo.png" />
+    <img alt="Vue logo" src="@/assets/logos/white-on-dark-logo.png" />
   </div>
 </template>
 

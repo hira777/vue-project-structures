@@ -12,7 +12,6 @@ const posts = {
   actions: {
     async fetch({ commit }) {
       const response = await PostsRepository.get();
-      console.log("response", response);
       commit("setPosts", response.data);
     }
   },

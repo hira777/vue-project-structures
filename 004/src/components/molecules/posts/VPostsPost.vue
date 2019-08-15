@@ -1,13 +1,13 @@
 <template>
-  <article class="v-post">
-    <h1 class="v-post__title">{{ title }}</h1>
-    <p class="v-post__text">{{ body }}</p>
-  </article>
+  <div class="post" @click="onClickPost">
+    <p class="title">{{ title }}</p>
+    <p class="text">{{ body }}</p>
+  </div>
 </template>
 
 <script>
 export default {
-  name: "VPost",
+  name: "VPosts",
   props: {
     id: {
       type: Number,
@@ -31,14 +31,23 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.v-post {
-  .v-post__title {
+.post {
+  cursor: pointer;
+
+  .title {
     color: #41b883;
     font-size: 1.6rem;
     font-weight: bold;
   }
-  .v-post__text {
+
+  .text {
     margin-top: 15px;
+  }
+
+  &:hover {
+    .title {
+      text-decoration: underline;
+    }
   }
 }
 </style>

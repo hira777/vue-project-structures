@@ -1,24 +1,23 @@
 <template>
-  <div class="v-posts">
-    <VPost
+  <div class="related-post-list">
+    <h2 class="title">関連記事</h2>
+    <VPostRelatedPost
       v-for="(post, index) in posts"
       :id="post.id"
       :key="index"
-      class="v-posts-post"
       :title="post.title"
-      :body="post.body"
       @clickPost="onClickPost"
     />
   </div>
 </template>
 
 <script>
-import VPost from "@/components/molecules/postLists/post/VPost.vue";
+import VPostRelatedPost from "@/components/molecules/post/VPostRelatedPost.vue";
 
 export default {
-  name: "VPosts",
+  name: "VPostRelatedPosts",
   components: {
-    VPost
+    VPostRelatedPost
   },
   props: {
     posts: {
@@ -29,20 +28,16 @@ export default {
   },
   methods: {
     onClickPost({ id }) {
-      this.$emit("clickPost", { id });
+      this.$emit("navigate", { id });
     }
   }
 };
 </script>
 
 <style lang="scss" scoped>
-.v-posts {
-  margin-top: 20px;
-
-  .v-posts-post {
-    & + .v-posts-post {
-      margin-top: 30px;
-    }
-  }
+.title {
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+  color: #333333;
 }
 </style>

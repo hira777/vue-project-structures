@@ -9,6 +9,9 @@ export default {
   getPost(postId) {
     return Repository.get(`${resource}/${postId}`);
   },
+  getPostByUserId(userId) {
+    return Repository.get(`${resource}?userId=${userId}`);
+  },
   post(payload) {
     return Repository.post(`${resource}`, payload);
   }

@@ -1,23 +1,18 @@
 <template>
-  <div class="v-post" @click="onClickPost">
-    <p class="v-post__title">{{ title }}</p>
-    <p class="v-post__text">{{ body }}</p>
+  <div class="related-post" @click="onClickPost">
+    <p class="title">{{ title }}</p>
   </div>
 </template>
 
 <script>
 export default {
-  name: "VPost",
+  name: "VPostRelatedPost",
   props: {
     id: {
       type: Number,
       required: true
     },
     title: {
-      type: String,
-      required: true
-    },
-    body: {
       type: String,
       required: true
     }
@@ -31,16 +26,25 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.v-post {
+.related-post {
+  padding: 13px 0;
   cursor: pointer;
+  border-top: 1px solid #cccccc;
 
-  .v-post__title {
+  .title {
     color: #41b883;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     font-weight: bold;
   }
-  .v-post__text {
-    margin-top: 15px;
+
+  &:last-child {
+    border-bottom: 1px solid #cccccc;
+  }
+
+  &:hover {
+    .title {
+      text-decoration: underline;
+    }
   }
 }
 </style>
