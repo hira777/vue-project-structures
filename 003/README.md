@@ -157,13 +157,38 @@ Atoms を `atoms`ディレクトリに格納するパターン。
 
 `components/atoms/menus/menuItem`のように、`/components/粒度/カテゴリ/コンポーネント名`で分けるパターン。
 
-ディレクトリの階層が深くなるが、中規模以上のアプリケーションであれば、これが一番使いやすいのではないかと思った。
+~~ディレクトリの階層が深くなるが、中規模以上のアプリケーションであれば、これが一番使いやすいのではないかと思った。~~
+
+※実際に使ってみたらコンポーネントを探すのが無茶苦茶大変だった。
 
 小規模なアプリケーションであれば。ここまでする必要はないと思う。
 
+## パターン6
+
+参考: [Vue.js × Atomic Design - コンポーネント分割の指針 / Vue.js and Atomic Design - Guideline for components division](https://speakerdeck.com/nrslib/vue-dot-js-and-atomic-design-guideline-for-components-division)
+
+```
+.
+├── App.vue
+└── components
+    ├── atoms
+    │   └── menu
+    │       └── VMenuItem.vue
+    └── molecules
+        └── menu
+            └── VMenu.vue
+```
+
+- `components/atoms/menu/VMenuItem.vue`
+- `components/molecules/menu/VMenu.vue`
+  
+のように、`/components/粒度/カテゴリ/コンポーネント名`で分けるパターン。
+
+これで良いんじゃないかなと思った。
+
 ## 総括
 
-小規模でない限り、パターン5が良いんじゃないのかーと思った。
+パターン6が良いんじゃないのかーと思った。
 
 ## Project setup
 ```
